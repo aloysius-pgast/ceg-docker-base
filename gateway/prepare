@@ -8,4 +8,5 @@ then
 fi
 # install heavy packages used by gateway
 mkdir -p /root/dummy/gateway && cd /root/dummy/gateway && \
-    npm install --unsafe-perm sqlite3 bufferutil
+    npm config set python /usr/bin/python2.7 && \
+    npm install --unsafe-perm node-gyp@3.8.0 sqlite3@4.1.0 bufferutil@4.0.1

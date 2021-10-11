@@ -8,4 +8,5 @@ then
 fi
 # install heavy packages used by ui
 mkdir -p /root/dummy/ui && cd /root/dummy/ui && \
-    npm install --unsafe-perm webpack webpack-dev-server node-gyp node-sass babel-core
+    npm config set python /usr/bin/python2.7 && \
+    npm install --unsafe-perm webpack@3.5.3 webpack-dev-server@2.7.1 node-gyp@3.8.0 node-sass@4.14.1 babel-core@6.25.0
